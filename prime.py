@@ -9,7 +9,7 @@ counter = 0
 for i in range(large, (large * large)):
     counter = 0
     j = 0
-    while(score_ints[j] < int(i ** .5)):
+    while(score_ints[j] < int(i ** .5) and counter==0):
         if(i%score_ints[j] == 0):
             counter = counter + 1
         j = j + 1
